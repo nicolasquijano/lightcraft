@@ -26,6 +26,7 @@ const MAX_FILE: u64 = 4 << 20;
 /// `(model, JSON)`.
 pub const BUNDLED: &[(&str, &str)] = &[
     ("ILCE-7CR", include_str!("../../../assets/camera-profiles/ILCE-7CR.json")),
+    ("ILCE-7M3", include_str!("../../../assets/camera-profiles/ILCE-7M3.json")),
     ("ILCE-7M4", include_str!("../../../assets/camera-profiles/ILCE-7M4.json")),
     ("X-H2S", include_str!("../../../assets/camera-profiles/X-H2S.json")),
     ("X-T4", include_str!("../../../assets/camera-profiles/X-T4.json")),

@@ -2,7 +2,7 @@
 
 **Stage: alpha** · next: beta, ~14 points and ~340–600 h away
 
-> **Last reviewed:** 2026-10-10 · **Last updated:** 2026-10-11 · **Change:** minor (Leica Q3 verified, 236 models; EOS R5 Mark II CR3 verified; RAW decoding 77%) · **Target:** Adobe Lightroom Classic 15.5 / Lightroom 9.6
+> **Last reviewed:** 2026-10-10 · **Last updated:** 2026-10-14 · **Change:** minor (Sony ILCE-7M3 camera colour: bundled profile from 19 photos, held-out ΔE about unchanged) · **Target:** Adobe Lightroom Classic 15.5 / Lightroom 9.6
 
 One-page summary of how close LightCraft is to Adobe Lightroom. Agents: read this, then pick work
 from [docs/gaps.md](docs/gaps.md). The full assessment, method and evidence are in
@@ -114,6 +114,10 @@ Ranked toward beta; detail in [docs/roadmap.md](docs/roadmap.md), gaps in [docs/
 
 ## Progress log
 
+- 2026-10-14: Sony ILCE-7M3 camera colour: bundled profile from 19 photos (68,912 colour pairs).
+  Held-out ΔE vs the camera JPEG is about unchanged (4-fold cross-validation, 6.18 without the
+  profile → 6.30 with it; 9 of 19 photos closer), so it ships as starting coverage for the model rather than as a
+  measured gain; re-fit and re-measure with a larger set. Measured calibration remains open.
 - 2026-10-11: Leica Q3 verified by a recorded check of 38 private DNGs (all decode and develop at full
   size; mean ΔE to the camera JPEG 6.3–13.9). 236 models verified; headline numbers unchanged.
 - 2026-10-11: Canon EOS R5 Mark II C-RAW decodes from sensor data (57% of its files opened as a
